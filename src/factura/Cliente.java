@@ -11,8 +11,16 @@ package factura;
  */
 public class Cliente {
     private String nombre, apellido, calle;
-    private Integer dni, altura;
+    private Integer dni, altura, cuil;
     private Localidad localidad;
+
+    public Integer getCuil() {
+        return cuil;
+    }
+
+    public void setCuil(Integer cuil) {
+        this.cuil = cuil;
+    }
 
     public Integer getAltura() {
         return altura;
