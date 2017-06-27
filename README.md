@@ -1,2 +1,2 @@
-# FacturaNueva
-Nueva factura
+# factura
+Ejemplo de modelado implementado en Java
