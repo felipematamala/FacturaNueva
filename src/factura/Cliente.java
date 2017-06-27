@@ -10,9 +10,17 @@ package factura;
  * @author alumno
  */
 public class Cliente {
-    private String nombre, apellido, calle;
+    private String nombre, apellido, calle, apodo;
     private Integer dni, altura, cuil;
     private Localidad localidad;
+
+    public String getApodo() {
+        return apodo;
+    }
+
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
+    }
 
     public Integer getCuil() {
         return cuil;
