@@ -24,8 +24,12 @@ public class Principal {
         unCliente.setCalle("Catamarca");
         unCliente.setAltura(177);
         
+        Continente unContinente = new Continente();
+        unContinente.setNombre("America");
+        
         Pais unPais = new Pais();
         unPais.setNombre("Argentina");
+        unPais.setContinente(unContinente);
         
         Provincia unaProv = new Provincia();
         unaProv.setNombre("Buenos Aires");

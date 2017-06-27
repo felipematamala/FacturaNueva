@@ -11,13 +11,22 @@ package factura;
  */
 public class Pais {
     private String nombre;
-
+    private Continente continente;
+    
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public Continente getContinente() {
+        return continente;
+    }
+
+    public void setContinente(Continente continente) {
+        this.continente = continente;
     }
     
     
