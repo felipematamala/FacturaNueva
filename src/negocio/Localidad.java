@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factura;
+package negocio;
 
 /**
  *
  * @author alumno
  */
-public class Partido {
+public class Localidad {
     private String nombre;
-    private Provincia provincia;
+    private Partido partido;
 
     public String getNombre() {
         return nombre;
@@ -21,12 +21,12 @@ public class Partido {
         this.nombre = nombre;
     }
 
-    public Provincia getProvincia() {
-        return provincia;
+    public Partido getPartido() {
+        return partido;
     }
 
-    public void setProvincia(Provincia provincia) {
-        this.provincia = provincia;
+    public void setPartido(Partido partido) {
+        this.partido = partido;
     }
     
     

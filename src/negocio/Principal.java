@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factura;
+package negocio;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -74,8 +74,7 @@ public class Principal {
         
         Factura unaFactura = new Factura();
         unaFactura.setCliente(unCliente);
-        unaFactura.setNumero(2354);
-        unaFactura.setFormaCobro(unFormaCobro);
+        unaFactura.agregarFormaCobro(unFormaCobro);
         unaFactura.agregarItem(unItemFacturaPepsi);
         unaFactura.agregarItem(unItemFacturaCoca);
     

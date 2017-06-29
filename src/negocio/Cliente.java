@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factura;
+package negocio;
 
 /**
  *
@@ -12,8 +12,8 @@ package factura;
 public class Cliente {
     private String nombre, apellido, calle, apodo;
     private Integer dni, altura, cuil;
-    private Localidad localidad;
-
+    private Localidad localidad;        
+        
     public String getApodo() {
         return apodo;
     }

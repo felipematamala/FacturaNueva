@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factura;
+package negocio;
 
 import java.util.ArrayList; 
 import java.util.Date;
@@ -19,11 +19,11 @@ import java.util.Set;
 public class Factura {
 
     private ArrayList<ItemFactura> itemFactura = new ArrayList();    
-    private FormaCobro formaCobro;
+    private ArrayList<FormaCobro> formaCobro = new ArrayList();
     private Cliente cliente;
     private Date fecha;
     private Integer numero;
-
+    
     public ArrayList<ItemFactura> getItemFactura() {
         return itemFactura;
     }
@@ -31,15 +31,13 @@ public class Factura {
        itemFactura.add(pItemFactura);
     }
     
-    
-
-    public FormaCobro getFormaCobro() {
-        return formaCobro;
-    }
-
-    public void setFormaCobro(FormaCobro formaCobro) {
-        this.formaCobro = formaCobro;
-    }
+    public ArrayList<FormaCobro> getFormaCobro() {
+            return formaCobro;
+       }             
+    public void agregarFormaCobro(FormaCobro pFormaCobro){
+       formaCobro.add(pFormaCobro);
+       }
+   
 
     public Cliente getCliente() {
         return cliente;
@@ -61,9 +59,6 @@ public class Factura {
         return numero;
     }
 
-    public void setNumero(Integer numero) {
-        this.numero = numero;
-    }
     
        
     
